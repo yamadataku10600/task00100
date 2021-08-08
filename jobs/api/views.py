@@ -4,9 +4,9 @@ from jobs.api.serializers import JobOfferSerializer
 
 
 class ListView(generics.ListCreateAPIView):
-    querset = JobOffer.objects.all().order_by('-id')
+    queryset = JobOffer.objects.all().order_by('-id')
     serializer_class = JobOfferSerializer
 
 class DetailView(generics.RetrieveUpdateDestroyAPIView):
-    querset = JobOffer.objects.all()
+    queryset = JobOffer.objects.all()
     serializer_class = JobOfferSerializer

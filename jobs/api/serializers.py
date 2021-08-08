@@ -3,5 +3,5 @@ from jobs.models import JobOffer
 
 class JobOfferSerializer(serializers.ModelSerializer):
     class Meta:
-        momdel = JobOffer
+        model = JobOffer
         fields = '__all__'
